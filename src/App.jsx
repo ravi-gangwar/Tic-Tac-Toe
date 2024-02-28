@@ -1,10 +1,16 @@
 import React from 'react'
 import GameUi from './components/GameUi'
+import ModePage from './page/ModePage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div>
-        <GameUi/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<ModePage/>}/>
+      <Route path='/single-player' element={<GameUi/>}/>
+      <Route path='/multi-player' element={<GameUi/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 

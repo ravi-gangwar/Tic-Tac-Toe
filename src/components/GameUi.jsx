@@ -3,10 +3,6 @@ import './gameui.css'; // Import CSS file for styling
 import { ImCross } from "react-icons/im";
 import { FaRegCircle } from "react-icons/fa";
 function GameUi() {
-  // Define image URLs for 'X' and 'O' symbols
-  // const x = "../assets/x.jpg" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/x.png?raw=true";
-  // const o = "../assets/o.jpg" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/o.png?raw=true";
-
   // State for current turn ('X' or 'O')
   const [turn, setTurn] = useState('O'); // Initial turn is 'O'
   // State to hold the game board state
