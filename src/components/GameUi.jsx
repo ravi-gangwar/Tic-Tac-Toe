@@ -71,7 +71,7 @@ function GameUi() {
       <div className='game-board min-h-[70%] min-w-[90%] lg:min-h-[70%] lg:min-w-[50%] md:min-h-[70%] md:min-w-[70%] sm:min-h-[70%] sm:min-w-[90%] relative bg-zinc-800 rounded-md flex flex-col'>
         <div className='header min-h-[10%] bg-zinc-700 min-w-[100%] flex justify-around items-center'>
           <div className='player-indicator h-[4rem] w-[4rem] bg-red-800 rounded-[50%] flex justify-center items-center'>{turn}</div>
-          <h1 className='text-5xl text-white'>Ravi</h1>
+          <h1 className='text-5xl sm:text-3xl md:text-3xl text-white'>Ravi</h1>
         </div>
         <div className='game-grid min-h-[80%] min-w-[100%] flex flex-col justify-around'>
           <div className='row min-h-[30%] min-w-[100%] flex justify-around items-center'>
