@@ -66,7 +66,7 @@ function GameUi() {
   }
 
   return (
-    <div className='h-screen w-screen bg-zinc-600 flex flex-col justify-around items-center'>
+    <div className='h-screen w-screen bg-zinc-600 flex flex-col justify-center gap-5 items-center'>
       <h1 className='text-2xl lg:text-5xl sm:text-xl md:text-3xl text-white'>Tic Tac Toe</h1>
       <div className='game-board min-h-[70%] min-w-[90%] lg:min-h-[70%] lg:min-w-[50%] md:min-h-[70%] md:min-w-[70%] sm:min-h-[70%] sm:min-w-[90%] relative bg-zinc-800 rounded-md flex flex-col'>
         <div className='header min-h-[10%] bg-zinc-700 min-w-[100%] flex justify-around items-center'>
