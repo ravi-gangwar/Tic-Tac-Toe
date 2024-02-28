@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './gameui.css'; // Import CSS file for styling
-
+import { ImCross } from "react-icons/im";
+import { FaRegCircle } from "react-icons/fa";
 function GameUi() {
   // Define image URLs for 'X' and 'O' symbols
-  const x = "../assets/x.png" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/x.png?raw=true";
-  const o = "../assets/o.png" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/o.png?raw=true";
+  // const x = "../assets/x.jpg" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/x.png?raw=true";
+  // const o = "../assets/o.jpg" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/o.png?raw=true";
 
   // State for current turn ('X' or 'O')
   const [turn, setTurn] = useState('O'); // Initial turn is 'O'
@@ -77,21 +78,21 @@ function GameUi() {
           <div className='row min-h-[30%] min-w-[100%] flex justify-around items-center'>
             {state.slice(0, 3).map((cell, index) => (
               <div key={index} className='cell min-h-[60%] min-w-[20%] bg-cyan-50 rounded-lg flex justify-center items-center cursor-pointer' onClick={() => handleCellClick(index)}>
-                {cell === 'X' ? <img src={x} alt="X" /> : cell === 'O' ? <img src={o} alt="O" /> : null}
+                {cell === 'X' ? <ImCross className='text-4xl'/> : cell === 'O' ? <FaRegCircle className='text-4xl'/> : null}
               </div>
             ))}
           </div>
           <div className='row min-h-[30%] min-w-[100%] flex justify-around items-center'>
             {state.slice(3, 6).map((cell, index) => (
               <div key={index + 3} className='cell min-h-[60%] min-w-[20%] bg-cyan-50 rounded-lg flex justify-center items-center cursor-pointer' onClick={() => handleCellClick(index + 3)}>
-                {cell === 'X' ? <img src={x} alt="X" /> : cell === 'O' ? <img src={o} alt="O" /> : null}
+                {cell === 'X' ? <ImCross className='text-4xl'/> : cell === 'O' ? <FaRegCircle className='text-4xl'/> : null}
               </div>
             ))}
           </div>
           <div className='row min-h-[30%] min-w-[100%] flex justify-around items-center'>
             {state.slice(6).map((cell, index) => (
               <div key={index + 6} className='cell min-h-[60%] min-w-[20%] bg-cyan-50 rounded-lg flex justify-center items-center cursor-pointer' onClick={() => handleCellClick(index + 6)}>
-                {cell === 'X' ? <img src={x} alt="X" /> : cell === 'O' ? <img src={o} alt="O" /> : null}
+                {cell === 'X' ? <ImCross className='text-4xl'/> : cell === 'O' ? <FaRegCircle className='text-4xl'/> : null}
               </div>
             ))}
           </div>
