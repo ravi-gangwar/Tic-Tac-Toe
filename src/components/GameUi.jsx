@@ -3,8 +3,8 @@ import './gameui.css'; // Import CSS file for styling
 
 function GameUi() {
   // Define image URLs for 'X' and 'O' symbols
-  const x = "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/x.png?raw=true";
-  const o = "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/o.png?raw=true";
+  const x = "../assets/x.png" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/x.png?raw=true";
+  const o = "../assets/o.png" || "https://github.com/ravi-gangwar/Tic-Tac-Toe/blob/main/src/assets/o.png?raw=true";
 
   // State for current turn ('X' or 'O')
   const [turn, setTurn] = useState('O'); // Initial turn is 'O'
